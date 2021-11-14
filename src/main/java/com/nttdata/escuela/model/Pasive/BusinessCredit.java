@@ -1,9 +1,13 @@
 package com.nttdata.escuela.model.Pasive;
 
-import com.nttdata.escuela.model.BusinessClient;
+import java.math.BigDecimal;
 
-import java.util.List;
+public class BusinessCredit extends Credit{
 
-public class BusinessCredit {
-    private List<BusinessClient> businessClient;
+    private Integer businessClientId;
+
+    public BusinessCredit(Integer id, BigDecimal balance, Integer businessClientId){
+        super(id, balance);
+        this.businessClientId = businessClientId;
+    }
 }

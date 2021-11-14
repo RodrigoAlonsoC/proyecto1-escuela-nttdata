@@ -1,9 +1,10 @@
 package com.nttdata.escuela.model;
 
-import com.nttdata.escuela.model.Active.Account;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-import java.util.List;
-
+@Data
+@AllArgsConstructor
 public abstract class Client {
     private Integer id;
 }

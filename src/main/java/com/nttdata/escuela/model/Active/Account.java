@@ -1,12 +1,17 @@
 package com.nttdata.escuela.model.Active;
 
-import com.nttdata.escuela.model.Client;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-import java.util.List;
+import java.math.BigDecimal;
 
+@Data
+@AllArgsConstructor
 public abstract class Account {
+    private Integer id;
+    private String numberAccount;
     private Boolean freeComission;
     private Boolean limitTransfer;
-    private List<Client> clients;
-    private double balance;
+    private Integer clientId;
+    private BigDecimal balance;
 }

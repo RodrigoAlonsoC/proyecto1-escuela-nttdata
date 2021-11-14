@@ -1,11 +1,25 @@
 package com.nttdata.escuela.model;
 
-import com.nttdata.escuela.model.Active.CurrentAccount;
-import com.nttdata.escuela.model.Pasive.BusinessCredit;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
+@Getter
+@Setter
 public class BusinessClient extends Client{
-    private List<BusinessCredit> businessCredits;
-    private List<CurrentAccount> currentAccounts;
+    private String companyName;
+    private String ruc;
+    private List<Integer> businessCreditIds;
+    private List<Integer> currentAccountIds;
+
+    public BusinessClient(Integer id, String ruc, String companyName, List<Integer> businessCreditIds, List<Integer> currentAccountIds) {
+        super(id);
+        this.ruc = ruc;
+        this.companyName = companyName;
+        this.businessCreditIds = businessCreditIds;
+        this.currentAccountIds = currentAccountIds;
+    }
+
+
 }
