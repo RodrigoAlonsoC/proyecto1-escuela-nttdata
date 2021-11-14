@@ -2,6 +2,7 @@ package com.nttdata.escuela.model.account;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 

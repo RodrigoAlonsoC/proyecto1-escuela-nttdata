@@ -1,7 +1,6 @@
 package com.nttdata.escuela.model.account;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 import java.math.BigDecimal;
 
