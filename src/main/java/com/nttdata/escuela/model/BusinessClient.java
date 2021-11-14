@@ -6,6 +6,10 @@ import lombok.Setter;
 
 import java.util.List;
 
+/**
+ * Class BusinessClient is a child of Client Class.
+ * Represent a real Business.
+ */
 @Data
 public class BusinessClient extends Client{
     private String companyName;
@@ -13,6 +17,9 @@ public class BusinessClient extends Client{
     private List<Integer> businessCreditIds;
     private List<Integer> currentAccountIds;
 
+    /**
+     * Constructor with parameters.
+     */
     public BusinessClient(Integer id, String ruc, String companyName, List<Integer> businessCreditIds, List<Integer> currentAccountIds) {
         super(id);
         this.ruc = ruc;
@@ -20,6 +27,10 @@ public class BusinessClient extends Client{
         this.businessCreditIds = businessCreditIds;
         this.currentAccountIds = currentAccountIds;
     }
+
+    /**
+     * Constructor Empty
+     */
     public BusinessClient(){
         super();
     }

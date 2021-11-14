@@ -4,6 +4,9 @@ import lombok.*;
 
 import java.math.BigDecimal;
 
+/**
+ * Class Account represent Actives.
+ */
 @Data
 @AllArgsConstructor
 public abstract class Account {

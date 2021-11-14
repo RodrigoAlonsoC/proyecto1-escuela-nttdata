@@ -9,14 +9,31 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Class MovementRepository is access to data of Movements.
+ */
 public class MovementRepository {
     private List<Movement> movements;
+
+    /**
+     * Constructor that represent connection between Model.
+     */
     public MovementRepository(){
         this.movements =  new ArrayList<>();
     }
+
+    /**
+     * Method to Add a Movement to Data.
+     * @param movement
+     */
     public void setMovement(Movement movement){
         this.movements.add(movement);
     }
+
+    /**
+     * Method that retrieves all Movements.
+     * @return List<Account>
+     */
     public List<Movement> getAll(){
 
         movements.add(new Movement(1, new BigDecimal(50), TypeMovement.DEPOSIT, new Date(2021, Calendar.DECEMBER, 13), 1));
