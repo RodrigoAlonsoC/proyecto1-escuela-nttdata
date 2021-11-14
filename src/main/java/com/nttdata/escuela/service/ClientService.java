@@ -37,5 +37,14 @@ public class ClientService extends App  {
         return account;
     }
 
+    public void makeWithdraw(Movement movement){
+        bin.movementRepository.setMovement(movement);
+        bin.accountRepository.getAll().stream().filter(accountRow -> accountRow.getId().equals(movement.getAccountId())).findFirst().map(account -> this.subtractMount(account, movement)).get();
+    }
+    public static Account subtractMount(Account account,Movement movement)
+    {
+        account.setBalance(account.getBalance().subtract(movement.getAmount()));
+        return account;
+    }
 
 }
