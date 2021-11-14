@@ -1,4 +1,4 @@
-package com.nttdata.escuela.model.Pasive;
+package com.nttdata.escuela.model.credit;
 
 import java.math.BigDecimal;
 

@@ -1,10 +1,9 @@
 package com.nttdata.escuela.repository;
 
-import com.nttdata.escuela.model.Client;
-import com.nttdata.escuela.model.Pasive.BusinessCredit;
-import com.nttdata.escuela.model.Pasive.Credit;
-import com.nttdata.escuela.model.Pasive.CreditCard;
-import com.nttdata.escuela.model.Pasive.PersonalCredit;
+import com.nttdata.escuela.model.credit.BusinessCredit;
+import com.nttdata.escuela.model.credit.Credit;
+import com.nttdata.escuela.model.credit.CreditCard;
+import com.nttdata.escuela.model.credit.PersonalCredit;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

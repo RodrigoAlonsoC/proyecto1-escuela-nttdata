@@ -1,11 +1,9 @@
-package com.nttdata.escuela.model.Pasive;
+package com.nttdata.escuela.model.credit;
 
-import com.nttdata.escuela.model.PersonalClient;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Getter
 @Setter

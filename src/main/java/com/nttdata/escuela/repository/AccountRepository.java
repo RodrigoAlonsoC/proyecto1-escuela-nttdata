@@ -1,9 +1,9 @@
 package com.nttdata.escuela.repository;
 
-import com.nttdata.escuela.model.Active.Account;
-import com.nttdata.escuela.model.Active.CurrentAccount;
-import com.nttdata.escuela.model.Active.FixedTermAccount;
-import com.nttdata.escuela.model.Active.SavingsAccount;
+import com.nttdata.escuela.model.account.Account;
+import com.nttdata.escuela.model.account.CurrentAccount;
+import com.nttdata.escuela.model.account.FixedTermAccount;
+import com.nttdata.escuela.model.account.SavingsAccount;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

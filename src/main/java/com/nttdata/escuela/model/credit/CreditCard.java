@@ -1,6 +1,5 @@
-package com.nttdata.escuela.model.Pasive;
+package com.nttdata.escuela.model.credit;
 
-import com.nttdata.escuela.model.Client;
 import lombok.Getter;
 import lombok.Setter;
 

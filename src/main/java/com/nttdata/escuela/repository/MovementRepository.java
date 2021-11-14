@@ -1,7 +1,7 @@
 package com.nttdata.escuela.repository;
 
-import com.nttdata.escuela.model.Active.Movement;
-import com.nttdata.escuela.model.Active.TypeMovement;
+import com.nttdata.escuela.model.account.Movement;
+import com.nttdata.escuela.model.account.TypeMovement;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
