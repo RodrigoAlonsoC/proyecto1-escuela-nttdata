@@ -3,21 +3,14 @@ package com.nttdata.escuela.service;
 import com.nttdata.escuela.App;
 import com.nttdata.escuela.model.account.Account;
 import com.nttdata.escuela.model.account.Movement;
-import com.nttdata.escuela.repository.AccountRepository;
-import com.nttdata.escuela.repository.MovementRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-<<<<<<< Updated upstream
-public class AccountService extends App {
-=======
 /**
  * Class AccountService implement logic of Account.
  */
-public class AccountService {
->>>>>>> Stashed changes
-
+public class AccountService extends App {
 
     /**
      * Constructor of Class AccountService

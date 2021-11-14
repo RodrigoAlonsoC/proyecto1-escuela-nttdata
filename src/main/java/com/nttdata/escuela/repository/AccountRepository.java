@@ -10,15 +10,12 @@ import java.util.List;
  * Class AccountRepository is access to data of Accounts.
  */
 public class AccountRepository {
-<<<<<<< Updated upstream
-    public List<Account> accounts;
-=======
+
     private List<Account> accounts;
 
     /**
      * Constructor that represent connection between Model.
      */
->>>>>>> Stashed changes
     public AccountRepository(){
         this.accounts =  new ArrayList<>();
     }
