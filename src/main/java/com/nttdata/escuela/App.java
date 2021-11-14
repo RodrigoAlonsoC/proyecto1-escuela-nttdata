@@ -20,7 +20,7 @@ public class App {
         //toPrint(accountService.getAll());
         Movement movement = new Movement(13,new BigDecimal(200), TypeMovement.DEPOSIT,new Date(2021, Calendar.NOVEMBER,15),1);
         bin.clientService.makeDeposit(movement);
-        System.out.println(bin.accountService.getByClient(1));
+        //System.out.println(bin.accountService.getByClient(1));
        // toPrint(bin.accountService.getByClient(1));
         //clientService.getClients();
         //CreditService creditService = new CreditService();

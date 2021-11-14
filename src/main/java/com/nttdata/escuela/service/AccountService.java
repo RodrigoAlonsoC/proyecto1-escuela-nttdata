@@ -3,14 +3,21 @@ package com.nttdata.escuela.service;
 import com.nttdata.escuela.App;
 import com.nttdata.escuela.model.account.Account;
 import com.nttdata.escuela.model.account.Movement;
+import com.nttdata.escuela.model.credit.Credit;
+import com.nttdata.escuela.model.credit.CreditCard;
+import com.nttdata.escuela.repository.AccountRepository;
+import com.nttdata.escuela.repository.MovementRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+public class AccountService extends App {
+
 /**
  * Class AccountService implement logic of Account.
  */
-public class AccountService extends App {
+
 
     /**
      * Constructor of Class AccountService
@@ -26,6 +33,12 @@ public class AccountService extends App {
     public List<Account> getAll(){
         return bin.accountRepository.getAll();
     }
+
+    public List<CreditCard> getAllCreditCard(){
+        return bin.creditRepository.getAllCreditCard();
+    }
+
+
 
     /**
      * Get account by clientId
@@ -120,5 +133,7 @@ public class AccountService extends App {
                 .filter(movement -> movement.getAccountId().equals(clientId))
                 .collect(Collectors.toList());
     }
+
+
 
 }
