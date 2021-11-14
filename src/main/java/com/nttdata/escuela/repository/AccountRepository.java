@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccountRepository {
-    private List<Account> accounts;
+    public List<Account> accounts;
     public AccountRepository(){
         this.accounts =  new ArrayList<>();
     }
@@ -31,5 +31,8 @@ public class AccountRepository {
         accounts.add(new FixedTermAccount(12, "133-98795-8", true, true, 12, new BigDecimal(1500.50), new BigDecimal(1000)));
 
         return accounts;
+    }
+    public void updateAccountRepository(List<Account> listAccount){
+        this.accounts = listAccount;
     }
 }
