@@ -5,6 +5,8 @@ import com.nttdata.escuela.repository.ClientRepository;
 import com.nttdata.escuela.repository.CreditRepository;
 import com.nttdata.escuela.repository.MovementRepository;
 
+import java.util.stream.Collectors;
+
 public class CreditService {
     private AccountRepository accountRepository;
     private CreditRepository creditRepository;
@@ -20,4 +22,12 @@ public class CreditService {
     public void getCredits(){
         creditRepository.getAllBusinessCredit().forEach(p -> System.out.println(p.getBusinessClientId()));
     }
+
+    public void getCreditCardBalanceByClientId(Integer clientId){
+        creditRepository.getAllCreditCard().stream()
+                .filter(credit -> credit.getClientId().equals(clientId))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+    }
+
 }
