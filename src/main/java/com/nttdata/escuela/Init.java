@@ -19,23 +19,24 @@ public class Init {
     public static MovementRepository movementRepository;
     public static PaymentRepository paymentRepository;
 
-    public Init(){
-       initService();
-       initRepository();
+    public Init() {
+        initService();
+        initRepository();
     }
 
-    public void initService(){
+    public void initService() {
         this.accountService = new AccountService();
         this.clientService = new ClientService();
         this.creditService = new CreditService();
     }
-    public void initRepository(){
+
+    public void initRepository() {
         this.accountRepository = new AccountRepository();
         this.chargeRepository = new ChargeRepository();
-      this.clientRepository = new ClientRepository();
-this.creditRepository = new CreditRepository();
-        this.movementRepository =  new MovementRepository();
-this.paymentRepository = new PaymentRepository();
+        this.clientRepository = new ClientRepository();
+        this.creditRepository = new CreditRepository();
+        this.movementRepository = new MovementRepository();
+        this.paymentRepository = new PaymentRepository();
     }
 
 }
