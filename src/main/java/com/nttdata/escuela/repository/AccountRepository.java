@@ -6,14 +6,35 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class AccountRepository is access to data of Accounts.
+ */
 public class AccountRepository {
+<<<<<<< Updated upstream
     public List<Account> accounts;
+=======
+    private List<Account> accounts;
+
+    /**
+     * Constructor that represent connection between Model.
+     */
+>>>>>>> Stashed changes
     public AccountRepository(){
         this.accounts =  new ArrayList<>();
     }
+
+    /**
+     * Method to Add a Account to Data.
+     * @param account
+     */
     public void setAccount(Account account){
         this.accounts.add(account);
     }
+
+    /**
+     * Method that retrieves all Accounts.
+     * @return List<Account>
+     */
     public List<Account> getAll(){
         accounts.add(new CurrentAccount(1, "111-45678-9",false, true, 1, new BigDecimal(102.1)));
         accounts.add(new CurrentAccount(2, "111-31238-6", false, true, 2, new BigDecimal(200.11)));

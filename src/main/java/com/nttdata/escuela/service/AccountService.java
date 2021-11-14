@@ -9,9 +9,19 @@ import com.nttdata.escuela.repository.MovementRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 
+<<<<<<< Updated upstream
 public class AccountService extends App {
+=======
+/**
+ * Class AccountService implement logic of Account.
+ */
+public class AccountService {
+>>>>>>> Stashed changes
 
 
+    /**
+     * Constructor of Class AccountService
+     */
     public AccountService(){
 
     }
