@@ -7,4 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 public abstract class Client {
     private Integer id;
+    public Client(){
+
+    }
 }

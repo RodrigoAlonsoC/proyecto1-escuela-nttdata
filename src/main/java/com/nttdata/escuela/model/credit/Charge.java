@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
-public abstract class Credit {
+public class Charge {
     private Integer id;
-    private BigDecimal balance;
-    public Credit(){
-
-    }
-
+    private BigDecimal amount;
+    private Integer creditId;
+    private Date dateCharge;
+    private Integer clientId;
 }

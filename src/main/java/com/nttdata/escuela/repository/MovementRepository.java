@@ -10,8 +10,15 @@ import java.util.Date;
 import java.util.List;
 
 public class MovementRepository {
+    private List<Movement> movements;
+    public MovementRepository(){
+        this.movements =  new ArrayList<>();
+    }
+    public void setMovement(Movement movement){
+        this.movements.add(movement);
+    }
     public List<Movement> getAll(){
-        List<Movement> movements = new ArrayList<>();
+
         movements.add(new Movement(1, new BigDecimal(50), TypeMovement.DEPOSIT, new Date(2021, Calendar.DECEMBER, 13), 1));
         movements.add(new Movement(2, new BigDecimal(20), TypeMovement.DEPOSIT, new Date(2021, Calendar.NOVEMBER, 30), 2));
         movements.add(new Movement(3, new BigDecimal(100), TypeMovement.DEPOSIT, new Date(2021, Calendar.OCTOBER, 21), 3));

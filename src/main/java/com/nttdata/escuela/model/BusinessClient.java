@@ -1,12 +1,12 @@
 package com.nttdata.escuela.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data
 public class BusinessClient extends Client{
     private String companyName;
     private String ruc;
@@ -19,6 +19,9 @@ public class BusinessClient extends Client{
         this.companyName = companyName;
         this.businessCreditIds = businessCreditIds;
         this.currentAccountIds = currentAccountIds;
+    }
+    public BusinessClient(){
+        super();
     }
 
 
