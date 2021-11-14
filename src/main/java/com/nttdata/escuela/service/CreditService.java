@@ -1,6 +1,7 @@
 package com.nttdata.escuela.service;
 
 import com.nttdata.escuela.App;
+import com.nttdata.escuela.model.credit.Credit;
 import com.nttdata.escuela.repository.ChargeRepository;
 import com.nttdata.escuela.repository.CreditRepository;
 import com.nttdata.escuela.repository.PaymentRepository;
@@ -32,6 +33,7 @@ public class CreditService extends App {
     public void getCreditCardBalanceByClientId(Integer clientId){
         bin.creditRepository.getAllCreditCard().stream()
                 .filter(credit -> credit.getClientId().equals(clientId))
+                .map(Credit::getBalance)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
     }

@@ -14,17 +14,32 @@ import java.util.List;
 public class App {
     public static Init bin;
     public static void main(String[] args) {
+
+        /*
+        bin = boot system
+         */
         bin = new Init();
-        //System.out.println(bin.accountService.getByClient(1));
-       // toPrint(bin.accountService.getByClient(1));
-        //toPrint(accountService.getAll());
-        Movement movement = new Movement(13,new BigDecimal(200), TypeMovement.DEPOSIT,new Date(2021, Calendar.NOVEMBER,15),1);
-        bin.clientService.makeDeposit(movement);
-        //System.out.println(bin.accountService.getByClient(1));
-       // toPrint(bin.accountService.getByClient(1));
-        //clientService.getClients();
-        //CreditService creditService = new CreditService();
-        //creditService.getCredits();
+
+        /**
+         * !there are more methods to use
+         */
+
+        /*
+         request balance credit card by id client
+         */
+        bin.creditService.getCreditCardBalanceByClientId(10);
+
+        /*
+        request balance account by id client
+         */
+        toPrint(bin.accountService.getBalanceByClient(10));
+
+        /*
+        request movements by id client
+         */
+        toPrint(bin.accountService.getMovementsByClientId(1));
+
+
 
     }
 

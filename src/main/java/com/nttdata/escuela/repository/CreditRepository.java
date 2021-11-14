@@ -30,7 +30,7 @@ public class CreditRepository {
 
     public List<CreditCard> getAllCreditCard() {
         List<CreditCard> credits = new ArrayList<>();
-        credits.add(new CreditCard(5, new BigDecimal(2000), 10, new BigDecimal(5000)));
+        credits.add(new CreditCard(5, new BigDecimal(3000), 10, new BigDecimal(5000)));
         credits.add(new CreditCard(6, new BigDecimal(1000), 12, new BigDecimal(4000)));
 
         return credits;
