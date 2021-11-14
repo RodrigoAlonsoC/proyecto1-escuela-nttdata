@@ -1,17 +1,20 @@
 package com.nttdata.escuela.repository;
 
-import com.nttdata.escuela.model.account.Account;
-import com.nttdata.escuela.model.account.CurrentAccount;
-import com.nttdata.escuela.model.account.FixedTermAccount;
-import com.nttdata.escuela.model.account.SavingsAccount;
+import com.nttdata.escuela.model.account.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AccountRepository {
+    private List<Account> accounts;
+    public AccountRepository(){
+        this.accounts =  new ArrayList<>();
+    }
+    public void setAccount(Account account){
+        this.accounts.add(account);
+    }
     public List<Account> getAll(){
-        List<Account> accounts = new ArrayList<>();
         accounts.add(new CurrentAccount(1, "111-45678-9",false, true, 1, new BigDecimal(102.1)));
         accounts.add(new CurrentAccount(2, "111-31238-6", false, true, 2, new BigDecimal(200.11)));
         accounts.add(new CurrentAccount(3, "111-54348-7",false, true, 3, new BigDecimal(500)));
