@@ -10,9 +10,11 @@ import java.math.BigDecimal;
 @Setter
 public class CreditCard extends Credit{
     private Integer clientId;
+    private BigDecimal creditCardLimit;
 
-    public CreditCard(Integer id, BigDecimal balance, Integer clientId){
+    public CreditCard(Integer id, BigDecimal balance, Integer clientId, BigDecimal creditCardLimit){
         super(id, balance);
         this.clientId = clientId;
+        this.creditCardLimit = creditCardLimit;
     }
 }

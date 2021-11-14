@@ -18,8 +18,8 @@ public class CreditRepository {
         credits.add(new PersonalCredit(3, new BigDecimal(5000), 6));
         credits.add(new PersonalCredit(4, new BigDecimal(2000), 8));
 
-        credits.add(new CreditCard(5, new BigDecimal(6000), 10));
-        credits.add(new CreditCard(6, new BigDecimal(6000), 12));
+        credits.add(new CreditCard(5, new BigDecimal(2000), 10, new BigDecimal(5000)));
+        credits.add(new CreditCard(6, new BigDecimal(1000), 12, new BigDecimal(4000)));
 
         credits.add(new BusinessCredit(7, new BigDecimal(5000), 3));
         credits.add(new BusinessCredit(8, new BigDecimal(8000), 3));
