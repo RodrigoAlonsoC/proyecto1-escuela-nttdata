@@ -18,10 +18,19 @@ public class AccountService {
         movementRepository = new MovementRepository();
     }
 
+    /**
+     * Get all data of accounts
+     * @return List<Account>
+     */
     public List<Account> getAll(){
         return accountRepository.getAll();
     }
 
+    /**
+     * Get account by clientId
+     * @param clientId
+     * @return List<Account>
+     */
     public List<Account> getByClient(Integer clientId){
         return accountRepository.getAll()
                 .stream()
@@ -29,6 +38,11 @@ public class AccountService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Get Account by numberAccount
+     * @param numberAccount
+     * @return List<Account>
+     */
     public List<Account> getByNumberAccount(String numberAccount){
         return accountRepository.getAll()
                 .stream()
@@ -36,6 +50,11 @@ public class AccountService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Get balance by CliendId
+     * @param clientId
+     * @return List<String>
+     */
     public List<String> getBalanceByClient(Integer clientId){
         return accountRepository.getAll()
                 .stream()
@@ -44,6 +63,11 @@ public class AccountService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Get balance by numberAccount
+     * @param numberAccount
+     * @return List<String>
+     */
     public List<String> getBalanceByNumberAccount(String numberAccount){
         return accountRepository.getAll()
                 .stream()
@@ -53,7 +77,12 @@ public class AccountService {
     }
 
 
-
+    /**
+     * Get balance by cliendId and numberAccount
+     * @param clientId
+     * @param numberAccount
+     * @return List<String>
+     */
     public List<String> getBalanceByClientAndNumberAccount(Integer clientId, String numberAccount){
         return accountRepository.getAll()
                 .stream()
@@ -63,6 +92,11 @@ public class AccountService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Get movements by CliendId
+     * @param clientId
+     * @return List<Movement>
+     */
     public List<Movement> getMovementsByClientId(Integer clientId){
         return movementRepository.getAll()
                 .stream()
@@ -70,6 +104,11 @@ public class AccountService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Get movements by numberAcoount
+     * @param numberAccount
+     * @return List<Movement>
+     */
     public List<Movement> getMovementsByNumberAccount(String numberAccount){
         Integer clientId = accountRepository.getAll()
                 .stream()

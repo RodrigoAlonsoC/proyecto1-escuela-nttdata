@@ -15,9 +15,18 @@ public class ClientService {
        this.movementRepository = new MovementRepository();
     }
 
+
+    /**
+     * Return Clients
+     */
     public void getClients(){
         this.clientRepository.getAll().forEach(System.out::println);
     }
+
+    /**
+     * Assign deposit
+     * @param movement
+     */
     public void makeDeposit(Movement movement)
     {
         movementRepository.setMovement(movement);

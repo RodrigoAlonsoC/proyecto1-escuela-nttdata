@@ -20,6 +20,8 @@ public class MovementRepository {
     public List<Movement> getAll(){
 
         movements.add(new Movement(1, new BigDecimal(50), TypeMovement.DEPOSIT, new Date(2021, Calendar.DECEMBER, 13), 1));
+        movements.add(new Movement(12, new BigDecimal(25), TypeMovement.WITHDRAW, new Date(2021, Calendar.DECEMBER, 14), 1));
+
         movements.add(new Movement(2, new BigDecimal(20), TypeMovement.DEPOSIT, new Date(2021, Calendar.NOVEMBER, 30), 2));
         movements.add(new Movement(3, new BigDecimal(100), TypeMovement.DEPOSIT, new Date(2021, Calendar.OCTOBER, 21), 3));
         movements.add(new Movement(4, new BigDecimal(60), TypeMovement.DEPOSIT, new Date(2021, Calendar.MARCH, 6), 4));
@@ -33,6 +35,7 @@ public class MovementRepository {
         movements.add(new Movement(9, new BigDecimal(50), TypeMovement.WITHDRAW, new Date(2021, Calendar.JUNE, 15), 10));
         movements.add(new Movement(10, new BigDecimal(30), TypeMovement.WITHDRAW, new Date(2021, Calendar.AUGUST, 13), 11));
         movements.add(new Movement(11, new BigDecimal(50), TypeMovement.DEPOSIT, new Date(2021, Calendar.OCTOBER, 12), 12));
+
 
         return movements;
     }
